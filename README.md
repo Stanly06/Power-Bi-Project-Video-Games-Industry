@@ -1,23 +1,38 @@
-# Power-Bi-Project-Video-Games-Industry
+# Video Games Industry Sales Dashboard (Power BI)
 
-Título del proyecto: Análisis de ventas por año en la industria de videojuegos utilizando Power BI
+Interactive **Power BI** report on the historical sales of the video game industry (1980–2016), broken down by year, region, platform and genre.
 
-Introducción:
-El proyecto tiene como objetivo principal realizar un análisis exhaustivo de las ventas por año en la industria de videojuegos utilizando Power BI como herramienta principal. La industria de los videojuegos ha experimentado un crecimiento significativo en los últimos años, convirtiéndose en un mercado cada vez más lucrativo y competitivo. Con el fin de comprender mejor las tendencias de ventas y el rendimiento de los juegos, este proyecto se centrará en recopilar, analizar y visualizar datos relevantes de ventas por año.
+**Stack:** Power BI Desktop · Power Query · DAX · Data modeling
 
-Metodología:
-1. Recopilación de datos: Se recopilarán datos de ventas de videojuegos de fuentes confiables y reconocidas en la industria, como las plataformas de distribución digital, los informes de las compañías de videojuegos y los datos de ventas proporcionados por analistas de mercado.
+<p align="center">
+  <img src="Power-Bi-Project-Video-Games-Industry.JPG" width="900" alt="Video game industry sales dashboard"/>
+</p>
 
-2. Limpieza y transformación de datos: Una vez recopilados los datos, se llevará a cabo un proceso de limpieza y transformación para asegurar la calidad y coherencia de los mismos. Se eliminarán duplicados, se corregirán errores y se normalizarán los formatos de datos.
+---
 
-3. Modelado de datos: Se diseñará un modelo de datos adecuado que incluya tablas relevantes, como la tabla de juegos, la tabla de ventas, la tabla de plataformas, entre otras. Se establecerán relaciones entre estas tablas para permitir un análisis efectivo.
+## What the report shows
 
-4. Creación de informes y paneles interactivos: Utilizando las capacidades de visualización de Power BI, se crearán informes y paneles interactivos que muestren información clave sobre las ventas por año en la industria de videojuegos. Se incluirán gráficos de barras, gráficos de líneas y tablas dinámicas para mostrar tendencias, patrones y comparaciones.
+- **Total sales KPI:** about 8.82K million in sales across the full period.
+- **Sales by region (donut):** North America 49.15%, Europe 27.33%, Japan 14.57%, other regions 8.95%.
+- **Sales by year and region (stacked columns):** growth from the 1980s to a peak around 2008, then a decline.
+- **Sales by platform and region:** PS2, Xbox 360, PS3 and Wii lead the ranking.
+- **Sales by genre and region:** Action, Sports and Shooter are the top genres.
+- **Detail table:** game, year, sales, platform and genre, with totals.
+- **Slicers** for year, region, genre and platform to explore the data interactively.
 
-5. Análisis y conclusiones: Se realizará un análisis profundo de los datos utilizando las herramientas de Power BI. Se examinarán factores como el género de los juegos, las plataformas de lanzamiento, las críticas y los puntajes de los usuarios, así como los ingresos generados por cada año. Se extraerán conclusiones significativas y se identificarán oportunidades o áreas de mejora en la industria.
+## How it was built
 
-Resultados esperados:
-El proyecto proporcionará una visión clara y detallada de las ventas por año en la industria de videojuegos. Los informes y paneles interactivos permitirán a los usuarios explorar y visualizar los datos de manera efectiva, identificando patrones, tendencias y relaciones relevantes. Además, el análisis realizado proporcionará información valiosa para empresas y desarrolladores de videojuegos, ayudándoles a tomar decisiones informadas sobre estrategias de lanzamiento, marketing y desarrollo de productos.
+1. Imported the sales dataset into Power BI and cleaned it in **Power Query** (data types, regional sales columns).
+2. Built the data model and **DAX** measures for total and regional sales.
+3. Designed a one-page report with KPI card, donut, stacked column and bar charts, a detail table and slicers.
 
-Conclusión:
-El proyecto de análisis de ventas por año en la industria de videojuegos utilizando Power BI tiene como objetivo ofrecer una visión profunda y comprensiva de las tendencias y el rendimiento de los juegos en el tiempo. Con esta información, las empresas y desarrolladores podrán optimizar sus estrategias y tomar decisiones basadas en datos para capitalizar las oportunidades de este mercado en constante evolución. Power BI proporcionará una plataforma sólida para visualizar y analizar los
+## Files
+
+```
+├── Power-Bi-Project-Video-Games-Industry.pbix   -- Power BI report (open with Power BI Desktop)
+└── Power-Bi-Project-Video-Games-Industry.JPG    -- dashboard screenshot
+```
+
+---
+
+**Stanly Fernández** · [LinkedIn](https://www.linkedin.com/in/stanly-fernandez/) · [Portfolio](https://stanly06.github.io/) · [GitHub](https://github.com/Stanly06)
